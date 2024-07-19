@@ -2,12 +2,12 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Litmus Prime Productions</title>
+    <title>Litmus Prime Productions - Contact Us</title>
     <link rel="stylesheet" href="style.css">
     <script>
-        window.onload = function() {
-            alert("Welcome to Litmus Prime Productions!");
-        };
+        function showThankYouMessage() {
+            alert("Thank you for contacting us! We have received your message.");
+        }
     </script>
 </head>
 <body>
@@ -39,32 +39,23 @@
                 <a href="contact.html">Contact Us</a>
             </div>
             <div id="main-div" class="clearfix">
-                <div class="imagewrap">
-                    <div class="Box">
-                        <img src="Video editor.jpg" alt="logo">
-                        <h2>Video Editing</h2>
-                    </div>
-                    <div class="Box">
-                        <img src="Genshin Beginner's Guide.png" alt="logo">
-                        <h2>Guides</h2>
-                    </div>
-                    <div class="Box">
-                        <img src="Theorycrafting.jpg" alt="logo">
-                        <h2>Theorycrafting</h2>
-                    </div>
-                    <div class="Box">
-                        <img src="Ashikai Primordial One Thumbnail.jpg" alt="logo">
-                        <h2>Lore Analysis</h2>
-                    </div>
-                    <div class="Box">
-                        <img src="Ganyu Showcase.png" alt="logo">
-                        <h2>Character Showcase</h2>
-                    </div>
-                </div>
+                <h2>Contact Us</h2>
+                <form action="https://formspree.io/f/mpwawvkg" method="post" id="contact-form" onsubmit="showThankYouMessage()">
+                    <input type="hidden" name="_subject" value="New submission from Litmus Prime Productions">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <input type="submit" value="Send Message">
+                </form>
             </div>
-        </div>
-        <div id="main-paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
         <div id="footer-div">
             <div class="footer-content">
