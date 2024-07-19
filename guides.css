@@ -65,8 +65,13 @@ body {
     border-radius: 20px;
     margin-bottom: 10px;
     flex: 1;
-    display: flex;
-    justify-content: space-between;
+}
+
+.main-content {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ADD8E6;
+    border-radius: 25px;
 }
 
 .imagewrap {
@@ -77,17 +82,18 @@ body {
 
 .Box {
     margin: 20px;
-    margin-right: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 250px;
+    width: 300px;
+    background-color: #ADD8E6;
+    border-radius: 25px;
 }
 
 .Box img {
     margin-bottom: 25px;
     width: 100%;
-    height: 150px;
+    height: 300px;
     object-fit: cover;
     border-radius: 20px;
 }
@@ -185,22 +191,4 @@ body {
     .sidenav a {
         font-size: 18px;
     }
-}
-
-.main-content {
-    margin-left: 25px;
-    padding: 20px;
-    background-color: #ADD8E6;
-    border-radius: 25px;
-    width: 70%;
-}
-
-.Box {
-    margin-left: 20px;
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ADD8E6;
-    border-radius: 25px;
 }
